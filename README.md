@@ -1,15 +1,12 @@
-![Screenshot Dashboard](image/walpaper.jpg)
+![Screenshot Dashboard](image/image.png)
 
-# Judul Besar (H1)
+# PORTOFOLIO MUHAMMAD RIDWAN FIRDAUS
 
-## Judul Sedang (H2)
+### SAYA BARU BELAJAR MENAMBAHKAN HTML, CSS, DAN JAVASCRIPT KE WEB SAYA HIHIHI
 
-### Judul Kecil (H3)
+#### next saya akan update:
 
-**Teks Tebal (Bold)**
-_Teks Miring (Italic)_
+- menggunakan framework
+- hosting
 
-- Poin List
-- Poin List lainnya
-
-`kode singkat` (Inline code)
+`bismilah`
