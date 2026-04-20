@@ -1,4 +1,4 @@
-![Screenshot Dashboard](image/saya.jpg)
+![Screenshot Dashboard](image/walpaper.jpg)
 
 # Judul Besar (H1)
 
