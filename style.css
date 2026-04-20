@@ -1,0 +1,271 @@
+/* --- RESET & VARIABEL --- */
+* {
+  box-sizing: border-box; /* Agar padding tidak menambah lebar elemen */
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f7f6; /* Warna latar belakang abu-abu sangat muda/bersih */
+  color: #333;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.foto-profil {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #f4f7f6;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Supaya konten di tengah */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* --- Navbra --- */
+header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container-nav {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+}
+
+.logo span {
+  color: #0d8abc;
+}
+
+.menu a {
+  color: #555;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #0d8abc;
+}
+
+/* --- CARD--- */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  margin-bottom: 30px;
+  border: 1px solid #eee;
+}
+
+h2 {
+  margin-top: 0;
+  color: #222;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* --- PROFIL --- */
+.profile-card {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto 40px auto;
+}
+
+.foto-profil {
+  border-radius: 50%; /* Membuat gambar jadi lingkaran */
+  margin-bottom: 15px;
+  border: 3px solid #f4f7f6;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card h1 {
+  margin: 0 0 5px 0;
+}
+
+.profile-card p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* --- TABEL --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f8f9fa;
+  color: #333;
+  font-weight: 600;
+}
+
+tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+/* --- GRID PROYEK --- */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.hover-effect {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.hover-effect h3 {
+  margin-top: 0;
+  color: #0d8abc;
+}
+
+/* --- KONTAK --- */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #444;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #0d8abc;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(13, 138, 188, 0.1);
+}
+
+.form-group-flex {
+  display: flex;
+  gap: 15px;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+input[type="color"] {
+  padding: 5px;
+  height: 45px;
+  cursor: pointer;
+}
+
+/* --- TOMBOL --- */
+.btn-primary {
+  background-color: #0d8abc;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0b739e;
+}
+
+.btn-full {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid #0d8abc;
+  color: #0d8abc;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.btn-outline:hover {
+  background-color: #0d8abc;
+  color: white;
+}
+
+/* --- FOOTER --- */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group-flex {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .w-50 {
+    width: 100%;
+  }
+
+  .container-nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu a {
+    margin: 0 10px;
+  }
+}

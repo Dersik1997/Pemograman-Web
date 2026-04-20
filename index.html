@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Muhammad Ridwan Firdaus</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="container-nav">
+        <div class="logo">RIDWAN</div>
+        <div class="menu">
+          <a href="#profil">Profil</a>
+          <a href="#Cita">Cita-Cita</a>
+          <a href="#kontak">Kontak</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar -->
+    <main class="container">
+      <section id="profil">
+        <div class="card profile-card">
+          <img src="image/saya.jpg" alt="Foto Ridwan" class="foto-profil" />
+          <h1>Muhammad Ridwan Firdaus</h1>
+          <p>Mahasiswa Teknik Informatika UMMI</p>
+        </div>
+      </section>
+
+      <!-- Konten Pendidikan -->
+      <section class="card section-tabel">
+        <h2>Riwayat Pendidikan</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Pendidikan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>SMKN 1 Sagaranten</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Universitas Muhammadiyah Sukabumi</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Konten Cita cita -->
+      <section id="Cita">
+        <h2>Cita cita saya</h2>
+        <div class="grid-container">
+          <article class="card hover-effect">
+            <h3>Membahagiakan orang tua</h3>
+            <p>
+              Membahagiakan orang tua itu cita cita yang sangant aminnkannnn
+            </p>
+          </article>
+
+          <article class="card hover-effect">
+            <h3>Jadi manusia</h3>
+            <p>manusia baik hatiii.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Konten Kontak -->
+      <section id="kontak" class="card form-section">
+        <h2>Hubungi Saya</h2>
+        <form>
+          <div class="form-group">
+            <label>Nama Lengkap</label>
+            <input type="text" placeholder="Masukkan nama Anda" />
+          </div>
+
+          <div class="form-group">
+            <label>Email (Wajib)</label>
+            <input type="email" required placeholder="nama@email.com" />
+          </div>
+
+          <div class="form-group-flex">
+            <div class="form-group w-50">
+              <label>Target Tanggal</label>
+              <input type="date" />
+            </div>
+            <div class="form-group w-50">
+              <label>Tema Warna</label>
+              <input type="color" value="#0d8abc" />
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary btn-full">
+            Kirim Pesan
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Muhammad Ridwan Firdaus © 2026</p>
+    </footer>
+  </body>
+</html>
