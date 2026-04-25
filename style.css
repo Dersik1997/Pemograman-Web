@@ -287,6 +287,29 @@ tbody tr:hover {
   background-color: #f8fafc;
 }
 
+.badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.st-done {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.st-progress {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.st-wait {
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

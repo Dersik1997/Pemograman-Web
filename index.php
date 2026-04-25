@@ -1,3 +1,4 @@
+<?php include 'koneksi.php'; ?>
 <!doctype html>
 <html lang="id">
   <head>
@@ -20,6 +21,7 @@
           <a href="#profil">Profil</a>
           <a href="#pendidikan">Pendidikan</a>
           <a href="#cita">Visi</a>
+          <a href="#target">Target</a>
           <a href="#kontak" class="btn-nav">Sapa Saya</a>
         </div>
       </nav>
@@ -102,6 +104,44 @@
               bakti dan kebahagiaan untuk kedua orang tua tercinta.
             </p>
           </article>
+        </div>
+      </section>
+
+      <section id="target" class="fade-in">
+        <div class="section-header">
+          <h2>Target Pencapaian</h2>
+          <div class="line"></div>
+        </div>
+        <div class="card table-card">
+          <table>
+            <thead>
+              <tr>
+                <th width="5%">ID</th>
+                <th width="30%">Target</th>
+                <th width="45%">Keterangan</th>
+                <th width="20%">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+             <?php
+              $res_t = $koneksi->query("SELECT * FROM target_pencapaian ORDER BY id ASC");
+              if ($res_t && $res_t->num_rows > 0) {
+                  while($row_t = $res_t->fetch_assoc()) {
+                      $st = $row_t['status'];
+                      $cls = ($st == 'Selesai') ? 'st-done' : (($st == 'Sedang Berjalan') ? 'st-progress' : 'st-wait');
+                      echo "<tr>";
+                      echo "<td>" . $row_t['id'] . "</td>";
+                      echo "<td><strong>" . htmlspecialchars($row_t['judul_target']) . "</strong></td>";
+                      echo "<td><span class='text-muted text-sm'>" . htmlspecialchars($row_t['keterangan']) . "</span></td>";
+                      echo "<td><span class='badge " . $cls . "'>" . htmlspecialchars($st) . "</span></td>";
+                      echo "</tr>";
+                  }
+              } else {
+                  echo "<tr><td colspan='4' class='text-center'>Data kosong</td></tr>";
+              }
+              ?>
+            </tbody>
+          </table>
         </div>
       </section>
 
